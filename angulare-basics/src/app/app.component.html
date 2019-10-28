@@ -1,25 +1,11 @@
 <h1>Hello Angular World</h1>
 
-<!-- <p>{{ title }}</p>
+<button (click)="backgroundToggle = !backgroundToggle">Toggle</button>
 
-<p><strong>{{ number - 2 }}</strong></p>
-<p><strong>{{ arr }}</strong></p>
-<p><strong>{{ obj.b.c }}</strong></p>
-
-<app-post></app-post> -->
-
-<button (click)="onClick()">Click me</button>
-
-<input
-  type="text"
-  name=""
-  id=""
-  (keyup.enter)="onInput($event)"
-  (blur)="onBlur(myInput.value)"
-  #myInput
->
-<p><strong>{{inputValue}}</strong></p>
-
-<hr>
-
-<app-post4></app-post4>
+<div [ngStyle]="{
+  width: '200px',
+  height: '200px',
+  borderRadius: '5px',
+  border: '1px solid #ccc',
+  background: backgroundToggle ? 'red' : 'blue'
+}"></div>
