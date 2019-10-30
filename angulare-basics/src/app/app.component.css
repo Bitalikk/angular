@@ -1,1 +1,11 @@
+/* NG STYLE */
+.red {
+  background: red;
+  font-size: bold;
+}
 
+.blue {
+  background: blue;
+  font-size: 1.5rem;
+  color: #fff;
+}
