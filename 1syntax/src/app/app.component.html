@@ -1,13 +1,30 @@
 <h1>Hello Angular World</h1>
 
-<ul>
-  <li *ngFor="let n of "></li>
-</ul>
+<p>{{now | date}}</p>
 
+<!-- ng FOR -->
 
+<!-- Вложеный масисв -->
+<!-- <ul style="list-style: none;">
+  <li *ngFor="let post of objs">
+    <p>{{post.title}}</p> <b>{{post.author}}</b>
+    <ul>
+      <li *ngFor="let comment of post.comments">
+        <div>
+          <small>{{comment.name}}</small>
+          <p>{{comment.text}}</p>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul> -->
 
-
-
+<!-- перебор массива -->
+<!-- <ul>
+  <li *ngFor="let n of arr; let idx = index">
+    {{idx + 1}}  <strong>{{ n }}</strong>
+  </li>
+</ul> -->
 
 <!-- <button (click)="toggle = !toggle">Toggle</button> -->
 
@@ -19,18 +36,13 @@
   <p *ngSwitchDefault>Lorem, ipsum.</p>
 </div> -->
 
-
-
 <!-- ng IF & ng ELSE -->
-
 
 <!-- <p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptates!</p>
 
 <ng-template #blueP>
   <p class="blue">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, enim?</p>
 </ng-template> -->
-
-
 
 <!-- NG STYLE -->
 
