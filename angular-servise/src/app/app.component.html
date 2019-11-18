@@ -2,9 +2,18 @@
   <h1>Angular Services</h1>
 
   <div class="card">
-    <h2>App Counter: {{appCounterService.counter}}</h2>
-      <button class="btn" (click)="appCounterService.decrease()">-</button>
-      <button class="btn" (click)="appCounterService.increase()">+</button>
+    <h2>App Counter: {{ appCounterService.counter }}</h2>
+    <button class="btn" (click)="appCounterService.decrease()">-</button>
+    <button class="btn" (click)="appCounterService.increase()">+</button>
   </div>
-</div>
 
+  <div class="card">
+    <h2>Local Counter: {{ localCounterService.counter }}</h2>
+    <button class="btn" (click)="localCounterService.decrease()">-</button>
+    <button class="btn" (click)="localCounterService.increase()">+</button>
+  </div>
+
+  <hr />
+
+  <app-counter></app-counter>
+</div>

@@ -1,18 +1,18 @@
-import { HttpClient } from "@angular/common/http";
-import { Component, OnInit } from "@angular/core";
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { delay } from 'rxjs/operators';
 import { Todo, TodosService } from './services/todos.service';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   todos: Todo[] = [];
-  todoTitle = "";
+  todoTitle = '';
   loading = false;
-  error: string = '';
+  error = '';
 
   constructor(private todosService: TodosService) {}
 
@@ -42,20 +42,20 @@ export class AppComponent implements OnInit {
       this.loading = false;
     }, err => {
       this.error = err.message;
-    })
+    });
   }
 
   removeTodo(id: number) {
     this.todosService.removeTodo(id)
     .subscribe(() => {
       this.todos = this.todos.filter(todo => todo.id !== id);
-    })
+    });
   }
 
   completeTodo(id: number) {
     this.todosService.completeTodo(id)
     .subscribe(todo => {
-      this.todos.find(t => t.id === todo.id).completed = true
-    })
+      this.todos.find(t => t.id === todo.id).completed = true;
+    });
   }
 }
