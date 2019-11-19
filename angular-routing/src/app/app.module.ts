@@ -11,6 +11,7 @@ import { PostComponent } from './post/post.component';
 import { PostsComponent } from './posts/posts.component';
 import { AssetsComponent } from './assets/assets.component';
 import { EnvironmentsComponent } from './environments/environments.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EnvironmentsComponent } from './environments/environments.component';
     PostComponent,
     PostsComponent,
     AssetsComponent,
-    EnvironmentsComponent
+    EnvironmentsComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
