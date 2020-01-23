@@ -23,7 +23,7 @@ export class AppComponent {
     ]);
   }
 
-  // test = () => null;
+  // test = () => null; second test
 
   showModal() {
     const modalFactory = this.resolver.resolveComponentFactory(ModalComponent);
