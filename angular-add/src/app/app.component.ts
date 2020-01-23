@@ -23,6 +23,8 @@ export class AppComponent {
     ]);
   }
 
+  // test = () => null;
+
   showModal() {
     const modalFactory = this.resolver.resolveComponentFactory(ModalComponent);
     this.refDir.containerRef.clear();
