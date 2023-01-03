@@ -5,6 +5,6 @@ import { Directive, ViewContainerRef } from '@angular/core';
 })
 export class RefDirective {
   constructor(public containerRef: ViewContainerRef) {
-
+    const s = 'test'
   }
 }
